@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Order Summary" underline="true">
+               <VBox.margin>
+                  <Insets left="45.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="________________________________________" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="Entree Selected :" />
+                  <Label fx:id="entreeSelectedLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="53.0" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Label text="Price : " />
+                  <Label fx:id="entreePriceLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="153.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="Drink Selected ; " />
+                  <Label fx:id="drinkSelectedLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="253.0" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Label text="Price : " />
+                  <Label fx:id="drinkPriceLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+            </HBox>
+            <Label text="Special Requests : " />
+            <Label fx:id="specialRequestsLabel" wrapText="true" />
+            <Label text="Free Water Request: " />
+            <Label fx:id="waterRequestLabel" />
+            <Label text="________________________________________" />
+            <HBox layoutX="10.0" layoutY="53.0" prefHeight="100.0" prefWidth="200.0" spacing="80.0">
+               <children>
+                  <Label text="Total" />
+                  <Label fx:id="totalPriceLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
